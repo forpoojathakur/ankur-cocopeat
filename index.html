@@ -154,8 +154,8 @@ window.onclick = function(event){
 nav{background:#2d5a1b;padding:0 18px;display:flex;align-items:center;justify-content:space-between;height:80px}
 .logo{display:flex;align-items:center;gap:16px}
 .logo-image{
-    width:72px;
-    height:72px;
+    width:60px;
+    height:60px;
     object-fit:contain;
     flex-shrink:0;
     background:#ffffff;
@@ -289,7 +289,7 @@ background:#fff;
 .cs{background:#eef8e8;
     border:1px solid #c8dfa8;margin:0 18px 18px;border-radius:10px;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px}
 .ci{color:#2d5a1b;font-family:'Raleway',sans-serif;font-size:12px;font-weight:400}
-.ci strong{color:#fff;font-family:'Cinzel',serif;font-size:14px;letter-spacing:1px;display:block;margin-bottom:2px}
+.ci strong{color:#1b4332;font-family:'Cinzel',serif;font-size:14px;letter-spacing:1px;display:block;margin-bottom:2px}
 .cc{background:#25d366;color:#fff;border:none;padding:9px 16px;border-radius:8px;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:.5px;cursor:pointer;white-space:nowrap}
 
 /* FULL PRODUCT CARDS */
@@ -541,6 +541,59 @@ background:#fff;
     font-family:'Raleway',sans-serif;
 
     pointer-events:none;
+}
+@media (max-width: 768px){
+
+    nav{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:12px;
+
+        gap:12px;
+
+    }
+
+    .logo{
+
+        justify-content:center;
+
+    }
+
+    .logo-image{
+
+        width:50px;
+
+        height:50px;
+
+    }
+
+    .logo-text{
+
+        font-size:18px;
+
+        letter-spacing:2px;
+
+    }
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:10px;
+
+    }
+
+    .nav-links a{
+
+        font-size:10px;
+
+    }
+
 }
 </style>
 </head>
